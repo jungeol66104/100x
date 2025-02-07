@@ -69,7 +69,7 @@ const Navbar = () => {
               홈
             </Link>
             <Link 
-              href="/how-it-works" 
+              href="/service" 
               className="block px-3 py-2 rounded-md text-foreground/80 hover:text-primary hover:bg-neutral/10"
             >
               서비스 소개
@@ -81,13 +81,7 @@ const Navbar = () => {
               회사 소개
             </Link>
             <Link 
-              href="/contact" 
-              className="block px-3 py-2 rounded-md text-foreground/80 hover:text-primary hover:bg-neutral/10"
-            >
-              문의하기
-            </Link>
-            <Link 
-              href="/get-started"
+              href="/contact"
               className="block px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90"
             >
               시작하기
