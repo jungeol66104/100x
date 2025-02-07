@@ -1,3 +1,5 @@
+@import '@/public/fonts/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +7,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-primary: #2ECC71; /* Example: Emerald Green */
+  --color-accent: #E67E22;  /* Example: Orange */
+  --color-neutral: #FDFDFD; /* Example: Soft Off-White */
 }
