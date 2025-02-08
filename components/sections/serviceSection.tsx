@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 // import Image from "next/image";
 // import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import CTAButton from "../ctaButton";
 
 const services = [
