@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 // import Image from "next/image";
 // import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import CTAButton from "../ctaButton";
 
 const services = [
   {
@@ -41,13 +42,8 @@ const ServiceSection = () => {
           최신 기술과 AI 자동화로 웹사이트와 웹 ERP를 빠르고 정교하게 구축합니다. 맞춤형 디자인과 강력한 시스템으로 경쟁력을 높이고, 데이터 중심 자동화로 효율을 극대화하세요. 개발 속도와 비용의 한계를 넘어, AI와 함께 새로운 가능성을 경험하세요.
           </p>
           <div className="flex justify-center">
-          <Link 
-            href="/contact"
-            className="px-5 py-2 rounded-full transition-all duration-200 bg-black text-white hover:scale-105"
-          >
-            시작하기
-          </Link>
-        </div>
+            <CTAButton />
+          </div>
         </motion.div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import CTAButton from "../ctaButton";
 
 const HeroSection = () => {
     return (
@@ -59,17 +60,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Link 
-                  href="/contact"
-                  className="w-fit px-5 py-2 rounded-full transition-all duration-200 text-base hover:scale-105"
-                  style={{
-                    backgroundColor: 'rgb(255, 255, 255)',
-                    color: 'rgb(0, 0, 0)',
-                    opacity: 1
-                  }}
-                >
-                  무료 상담 신청
-                </Link>
+                <CTAButton color="white" text="무료 상담 신청" />
               </motion.div>
             </div>
           </div>

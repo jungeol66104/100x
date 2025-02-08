@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import CTAButton from "../ctaButton";
 
 type ServiceKey = "speed" | "schedule" | "quality" | "communication";
 
@@ -64,12 +65,7 @@ const PainPointSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="flex justify-center">
-                <Link 
-                  href="/contact"
-                  className="px-5 py-2 rounded-full transition-all duration-200 bg-black text-white hover:scale-105"
-                >
-                  시작하기
-                </Link>
+                <CTAButton />
               </div>
             </motion.div>
 
