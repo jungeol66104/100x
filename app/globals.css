@@ -7,7 +7,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-primary: #2ECC71; /* Example: Emerald Green */
-  --color-accent: #E67E22;  /* Example: Orange */
-  --color-neutral: #FDFDFD; /* Example: Soft Off-White */
+  --color-primary: #065F46; /* Deep Emerald - represents trust, stability, growth */
+  --color-accent: #A99271;  /* Burnt Orange - adds warmth and innovation */
+  --color-neutral: #FDFDFD; /* Clean off-white for contrast */
 }

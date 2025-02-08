@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         mont: ['Mont', 'sans-serif'],
         pretendard: ['Pretendard', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
         },
         fontWeight: {
         light: '100',
