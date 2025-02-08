@@ -3,6 +3,7 @@
 import HeroSection from "@/components/sections/heroSection";
 import ServiceSection from "@/components/sections/serviceSection";
 import PainPointSection from "@/components/sections/painPointSection";
+import CTAButton from "@/components/ctaButton";
 
 export default function Home() {
   return (
@@ -23,9 +24,7 @@ export default function Home() {
                 AI 에이전트와 함께 완성도 높은 소프트웨어를 제작합니다. 기획부터 개발, 테스트, 배포, 유지보수까지 전체 제품 개발 과정을 AI가 지원하여 빠르고 효율적으로 진행합니다. 24시간 365일 끊김 없는 개발로 최고의 결과물을 제공해드립니다.
               </p>
               <div className="flex justify-center">
-                <button className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 transition-transform">
-                  시작하기
-                </button>
+                <CTAButton />
               </div>
             </div>
           </div>
