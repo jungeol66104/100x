@@ -7,97 +7,90 @@ export default function Home() {
   return (
     <div className="font-pretendard">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-background pt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center">
-            <motion.h1 
-              className="text-4xl md:text-6xl font-bold text-foreground mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              아웃소싱을 <span className="text-primary">100배</span> 더<br />
-              빠르고 저렴하게
-            </motion.h1>
-            <motion.p 
-              className="text-lg md:text-xl text-foreground/70 mb-8 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              AI 기반 매칭 시스템으로 최적의 개발팀을 찾아 프로젝트 비용과 시간을 획기적으로 절감해드립니다
-            </motion.p>
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-200">
-                무료 상담 신청
-              </Link>
-              <Link href="/service" className="px-8 py-4 bg-background border border-foreground/10 text-foreground rounded-lg hover:bg-neutral/10 transition-colors duration-200">
-                서비스 소개
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+        {/* Grid pattern */}
+        <div 
+          className="absolute inset-0 z-10" 
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            opacity: 0.7
+          }}
+        />
 
-      {/* Value Proposition */}
-      <section className="bg-neutral py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">왜 100x인가요?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "비용 절감",
-                description: "AI 매칭으로 프로젝트 비용 최대 60% 절감",
-                icon: "💰"
-              },
-              {
-                title: "시간 단축",
-                description: "평균 계약 소요 기간 3일 이내 달성",
-                icon: "⚡"
-              },
-              {
-                title: "품질 보장",
-                description: "검증된 개발팀과 프로젝트 품질 보증",
-                icon: "✨"
-              }
-            ].map((item, index) => (
-              <motion.div 
-                key={index}
-                className="bg-background p-8 rounded-xl shadow-sm"
+        {/* Content */}
+        <div className="relative z-20 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+            <div className="text-center sm:text-left">
+              <motion.h1 
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-[120px] font-extraBold text-white mb-4 sm:mb-6 leading-tight"
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
               >
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-foreground/70">{item.description}</p>
+                <span className="block">100배 빠른</span>
+                <span className="block">외주개발 속도</span>
+              </motion.h1>
+              <motion.p 
+                className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 sm:mb-12 max-w-3xl font-light mx-auto sm:mx-0"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                AI 에이전트를 활용하여 프로젝트 효율성을 극대화하고, 고객님의 소중한 시간과 비용을 대폭 절감해드립니다
+              </motion.p>
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <Link 
+                  href="/contact"
+                  className="w-fit px-5 py-2 rounded-full transition-all duration-200 text-base hover:scale-105"
+                  style={{
+                    backgroundColor: 'rgb(255, 255, 255)',
+                    color: 'rgb(0, 0, 0)',
+                    opacity: 1
+                  }}
+                >
+                  무료 상담 신청
+                </Link>
               </motion.div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-background py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            지금 바로 시작하세요
-          </h2>
-          <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
-            프로젝트 상담부터 계약까지 모든 과정을 100x와 함께하세요
-          </p>
-          <Link 
-            href="/contact"
-            className="inline-block px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors duration-200"
-          >
-            무료 상담 시작하기
-          </Link>
-        </div>
+      {/* Section 1 */}
+      <section className="bg-neutral py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 2 */}
+      <section className="bg-background py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 3 */}
+      <section className="bg-neutral py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 4 */}
+      <section className="bg-background py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 5 */}
+      <section className="bg-neutral py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 6 */}
+      <section className="bg-background py-12 sm:py-16 md:py-20 hidden">
+      </section>
+
+      {/* Section 7 */}
+      <section className="bg-neutral py-12 sm:py-16 md:py-20 hidden">
       </section>
     </div>
   );
