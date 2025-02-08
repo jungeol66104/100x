@@ -16,7 +16,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-full mx-auto">
             <div className="bg-sub-3 rounded-2xl p-8 md:p-12 shadow-sm flex flex-col items-center">
-              <h2 className="text-xl sm:text-5xl md:text-6xl font-bold text-black mb-6">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-black mb-6">
                 지금 100x와 협업하세요
               </h2>
               <p className="max-w-4xl text-lg text-gray-600 mb-8 text-center">
