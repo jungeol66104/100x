@@ -11,7 +11,7 @@ const CTAButton = ({
 }: CTAButtonProps) => {
   return (
     <Link
-      href="https://tally.so/r/m6W0Ge"
+      href="https://tally.so/r/w7aGb6"
       className={`
         px-5 py-2 rounded-full transition-all duration-200 hover:scale-105
         ${color === "black" 

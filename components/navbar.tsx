@@ -44,7 +44,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <Link 
-            href="https://tally.so/r/m6W0Ge"
+            href="https://tally.so/r/w7aGb6"
             className="px-4 sm:px-5 py-1.5 sm:py-2 text-sm sm:text-base rounded-full transition-all duration-200"
             style={{
               backgroundColor: `rgb(${255 - (scrollProgress * 255)}, ${255 - (scrollProgress * 255)}, ${255 - (scrollProgress * 255)})`,
