@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import CTAButton from "../ctaButton";
 
-type ServiceKey = "speed" | "schedule" | "quality" | "communication";
+type ServiceKey = "speed" | "business" | "cost" | "communication";
 
 type Service = {
   title: string;
@@ -28,17 +28,17 @@ const PainPointSection = () => {
         title: "100배 빠른 개발 속도",
         description: "AI 자동화 기술을 활용하여 개발 시간을 대폭 단축합니다. 반복적인 작업을 자동화하고, 코드 생성을 최적화하여 프로젝트 완료 시간을 획기적으로 줄입니다."
       },
-      schedule: {
-        title: "정확한 일정 관리",
-        description: "AI가 프로젝트의 진행 상황을 실시간으로 모니터링하고, 잠재적인 지연 요소를 미리 파악하여 정확한 일정 관리를 보장합니다."
+      business: {
+        title: "비즈니스 맞춤형",
+        description: "비즈니스 요구사항에 맞춤형 솔루션을 제공합니다. 공장형 템플릿으로 찍어내지 않습니다. 고객의 비즈니스를 정확히 이해해서 최적화된 솔루션을 제공합니다."
       },
-      quality: {
-        title: "실시간 품질 관리",
-        description: "24시간 365일 AI가 코드 품질을 모니터링하고 최적화합니다. 버그를 사전에 감지하고, 성능을 지속적으로 개선하여 최상의 결과물을 제공합니다."
+      cost: {
+        title: "비용 절감",
+        description: "AI 기술을 활용한 효율적인 프로세스로 퀄리티 대비 개발 비용을 최소화합니다. 반복적인 작업의 자동화와 리소스 최적화를 통해 프로젝트 전반의 비용 효율성을 높입니다."
       },
       communication: {
-        title: "스마트 커뮤니케이션",
-        description: "AI 기반 실시간 소통 시스템으로 즉각적인 피드백과 의사결정이 가능합니다. 언제든지 프로젝트 현황을 확인하고 조율할 수 있습니다."
+        title: "딥 커뮤니케이션",
+        description: "마치 사내 개발팀처럼 긴밀하게 소통합니다. 실시간 협업 도구와 투명한 진행 현황 공유로 프로젝트의 모든 이해관계자가 한 팀처럼 움직입니다."
       }
     };
 
