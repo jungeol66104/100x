@@ -2,25 +2,20 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-// import Image from "next/image";
-// import { ArrowRight } from "lucide-react";
 import CTAButton from "../ctaButton";
 
 const services = [
   {
     title: "웹사이트",
-    description: "반응형 웹사이트부터 복잡한 웹 애플리케이션까지, 최신 기술과 AI를 활용하여 빠르고 안정적으로 구축합니다.",
-    image: "/images/web-dev.jpg"
+    description: "반응형 웹사이트부터 맞춤형 쇼핑몰까지, AI 기반 초고속 개발로 구축합니다. 결제, 재고 관리, 회원 관리 등 이커머스의 모든 핵심 기능을 포함하며, SEO 친화적인 구조로 온라인 비즈니스의 성장을 지원합니다.",
   },
   {
-    title: "웹 ERP",
-    description: "기업의 모든 업무와 데이터를 웹에서 통합 관리할 수 있는 맞춤형 ERP 시스템을 제공합니다.",
-    image: "/images/erp.jpg"
+    title: "앱 (Flutter, RN)",
+    description: "iOS와 Android를 모두 지원하는 크로스플랫폼 모바일 앱을 개발합니다. 웹뷰 최적화와 네이티브 기능 연동으로 완성도 높은 앱을 제공하며, AI 기반 빠른 개발로 시장 진입을 앞당깁니다.",
   },
   {
-    title: "IT 솔루션", 
-    description: "CRM, 그룹웨어, 데이터 분석 등 기업에 필요한 모든 IT 솔루션을 AI 기반으로 구축합니다.",
-    image: "/images/crm.jpg"
+    title: "어드민 · ERP · CRM",
+    description: "기업 운영에 필요한 관리자 시스템, 자원관리, 고객관리 솔루션을 각각 제공합니다. 각 시스템의 특성에 맞춘 AI 기반 자동화로 업무 효율을 극대화하며, 필요한 기능만 선택하여 도입할 수 있어 비용 효율적입니다.",
   }
 ];
 
@@ -38,24 +33,16 @@ const ServiceSection = () => {
             서비스
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
-          최신 기술과 AI 자동화로 웹사이트와 웹 ERP를 빠르고 정교하게 구축합니다. 맞춤형 디자인과 강력한 시스템으로 경쟁력을 높이고, 데이터 중심 자동화로 효율을 극대화하세요. 개발 속도와 비용의 한계를 넘어, AI와 함께 새로운 가능성을 경험하세요.
+            AI 에이전트를 활용한 초고속 개발로 웹사이트부터 엔터프라이즈 솔루션까지 다양한 소프트웨어를 제공합니다. 최신 기술과 AI 자동화로 개발 속도와 품질을 동시에 높이고, 비용 효율적인 솔루션으로 비즈니스 성장을 가속화하세요.
           </p>
           <div className="flex justify-center">
             <CTAButton />
           </div>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden shadow-none border-0">
-              {/* <div className="relative h-48 w-full">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover"
-                />
-              </div> */}
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 border-b pb-2">
                   {service.title}
